@@ -30,7 +30,7 @@ netif
 SELECT DISTINCT interface  FROM net;
 ```
 
-3-add below lines in telegraf config:
+3-add below lines in telegraf config /etc/telegraf/telegraf.conf (after change need to restart telegraf service "systemctl restart telegraf.service"):
 
 ```
 [[inputs.cpu]]
@@ -52,6 +52,7 @@ SELECT DISTINCT interface  FROM net;
 
 
 3-add below lines to telegraf config in case you use jolokia, it will rename jvm metrics that has special charecters (questdb can't store column name that has special charecter). this action able metrics to store on questdb.
+(after change need to restart telegraf service "systemctl restart telegraf.service")
 
 ```
  [[processors.rename]]
