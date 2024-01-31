@@ -24,7 +24,7 @@ netif
 SELECT DISTINCT interface  FROM net;
 ```
 
-3-add below lines in telegraf config
+3-add below lines in telegraf config:
 
 ```
 [[inputs.cpu]]
@@ -45,7 +45,7 @@ SELECT DISTINCT interface  FROM net;
 ```
 
 
-3-add below lines to telegraf config in case you use jolokia, it will rename jvm metrics that has special charecters in column name. this action able metrics to store on questdb.
+3-add below lines to telegraf config in case you use jolokia, it will rename jvm metrics that has special charecters (questdb can't store column name that has special charecter). this action able metrics to store on questdb.
 
 ```
  [[processors.rename]]
