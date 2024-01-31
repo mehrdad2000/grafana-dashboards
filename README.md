@@ -1,5 +1,7 @@
 # grafana-dashboards
 
+<img src="https://github.com/mehrdad2000/grafana-dashboards/assets/26499665/924261db-123d-4751-ba52-334818fa05f9" width="20%" />
+
 ![image](https://github.com/mehrdad2000/grafana-dashboards/assets/26499665/924261db-123d-4751-ba52-334818fa05f9)
 
 ## QuestDB
