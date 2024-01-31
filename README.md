@@ -1,8 +1,13 @@
 # grafana-dashboards
 
-#questdb
-add below variables:
 
+### questdb
+
+1-import [Telegraf QuestDB Grafana System Dashboard](https://github.com/mehrdad2000/grafana-dashboards/blob/main/Telegraf_questdb_grafana_system%20dashboard.json) in your grafana.
+
+2-add below variables:
+
+```
 host
 SELECT DISTINCT host FROM cpu order by host asc;
 
@@ -17,10 +22,32 @@ SELECT DISTINCT name FROM diskio;
 
 netif
 SELECT DISTINCT interface  FROM net;
+```
+
+3-add below lines in telegraf config
+
+```
+[[inputs.cpu]]
+[[inputs.disk]]
+[[inputs.diskio]]
+[[inputs.kernel]]
+[[inputs.mem]]
+[[inputs.processes]]
+[[inputs.swap]]
+[[inputs.system]]
+[[inputs.internal]]
+[[inputs.interrupts]]
+[[inputs.linux_sysctl_fs]]
+[[inputs.net]]
+ [[inputs.net_response]]
+ [[inputs.netstat]]
+ [[inputs.nstat]]
+```
 
 
-#add to the telegraf config in case you use jolokia, it will rename jvm metrics that has special charecters in column name. this action able to store metrics on questdb.
+3-add below lines to telegraf config in case you use jolokia, it will rename jvm metrics that has special charecters in column name. this action able metrics to store on questdb.
 
+```
  [[processors.rename]]
 
   [[processors.rename.replace]]
@@ -152,6 +179,7 @@ SELECT DISTINCT interface  FROM net;
   [[processors.rename.replace]]
     field = "dentry-age-limit"
     dest = "dentryagelimit"
+```
 
 
 
