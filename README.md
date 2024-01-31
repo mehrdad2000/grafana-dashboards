@@ -7,6 +7,7 @@
 
 [Screenshot](https://github.com/mehrdad2000/grafana-dashboards/assets/26499665/924261db-123d-4751-ba52-334818fa05f9)
 
+telegraf > questdb > grafana
 
 1-import [Telegraf QuestDB Grafana System Dashboard](https://github.com/mehrdad2000/grafana-dashboards/blob/main/Telegraf_questdb_grafana_system%20dashboard.json) in your grafana.
 
