@@ -1,7 +1,7 @@
 # grafana-dashboards
 
 
-### questdb
+## QuestDB
 
 1-import [Telegraf QuestDB Grafana System Dashboard](https://github.com/mehrdad2000/grafana-dashboards/blob/main/Telegraf_questdb_grafana_system%20dashboard.json) in your grafana.
 
