@@ -5,7 +5,7 @@
 
 ## Grafana action button run bash command with simple python webservice via rest
 
-Jmeter > IBM IIB > Nod2
+Jmeter > IBM IIB > MyAPP
 
 This project adds button to the Grafana dashboard to run commands in bash.
 first we need webservice that when we hit the button send "get" request to it, the web service trigger command on destination host.
