@@ -1,13 +1,11 @@
 # grafana-dashboards
 
-![alt text]([http://url/to/img.png](https://github.com/mehrdad2000/grafana-dashboards/blob/098fbcf9c13cb2c82a9f3eba54852852f182325a/PerformanceTestJmeter/grafana-dashboard-button.jpg))
+![alt text](https://github.com/mehrdad2000/grafana-dashboards/blob/098fbcf9c13cb2c82a9f3eba54852852f182325a/PerformanceTestJmeter/grafana-dashboard-button.jpg?raw=true)
 
 
 ## Grafana action button run bash command with simple python webservice via rest
 
-[Screenshot](https://github.com/mehrdad2000/grafana-dashboards/assets/26499665/924261db-123d-4751-ba52-334818fa05f9)
-
-Jmeter > Nod1 > Nod2
+Jmeter > IBM IIB > Nod2
 
 This project adds button to the Grafana dashboard to run commands in bash.
 first we need webservice that when we hit the button send "get" request to it, the web service trigger command on destination host.
