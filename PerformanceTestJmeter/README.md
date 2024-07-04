@@ -9,7 +9,7 @@
 
 Jmeter > Nod1 > Nod2
 
-This project add button to grafana dashboard to run command in bash.
+This project adds button to the Grafana dashboard to run commands in bash.
 first we need webservice that when we hit the button send "get" request to it, the web service trigger command on destination host.
 
 in this example i have 3 buttons that each of them run specific performance test via jmeter.
